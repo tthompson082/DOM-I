@@ -80,9 +80,17 @@ const title = document.querySelector('h1')
 
 title.textContent = siteContent ["cta"] ["h1"]
 
+title.style.color = "forestgreen"
+
 const button1 = document.querySelector(".cta > .cta-text > button")
 
 button1.textContent = siteContent ["cta"] ["button"]
+
+button1.style.background = "gold"
+
+button1.addEventListener('click', () => {alert('I am in the dom') })
+
+button1.addEventListener('onmouseover', (event) => { event.target.style.backgroundColor = 'red'; })
 
 const ctaImg = document.querySelector("#cta-img")
 
@@ -94,6 +102,9 @@ const topContentHeaders = document.querySelectorAll(".main-content > .top-conten
 topContentHeaders[0].textContent = siteContent["main-content"]["features-h4"]
 
 topContentHeaders[1].textContent = siteContent["main-content"]["about-h4"]
+
+topContentHeaders[0].style.color = "forestgreen"
+topContentHeaders[1].style.color = "forestgreen"
 
 const topContentParas = document.querySelectorAll(".main-content > .top-content > .text-content > p")
 
@@ -115,6 +126,10 @@ botContentHeaders[1].textContent = siteContent["main-content"]["product-h4"]
 
 botContentHeaders[2].textContent = siteContent["main-content"]["vision-h4"]
 
+botContentHeaders[0].style.color = "forestgreen"
+botContentHeaders[1].style.color = "forestgreen"
+botContentHeaders[2].style.color = "forestgreen"
+
 const botContentParas = document.querySelectorAll(".main-content > .bottom-content > .text-content > p")
 
 botContentParas[0].textContent = siteContent["main-content"]["services-content"]
@@ -127,6 +142,8 @@ botContentParas[2].textContent = siteContent["main-content"]["vision-content"]
 const contactTitle = document.querySelector(".contact > h4")
 
 contactTitle.textContent = siteContent["contact"]["contact-h4"]
+
+contactTitle.style.color = "forestgreen"
 
 const contactInfo = document.querySelectorAll(".contact > p")
 
