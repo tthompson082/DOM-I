@@ -78,7 +78,10 @@ testimonials.style.color = "green"
 //cta section
 const title = document.querySelector('h1')
 
-title.textContent = siteContent ["cta"] ["h1"]
+const dom1 = siteContent.cta.h1.substring(0, 4)
+const is1 = siteContent.cta.h1.substring(4, 7)
+const awesome1 = siteContent.cta.h1.substring(7, 15)
+title.innerHTML = `${dom1} <br> ${is1} <br> ${awesome1}`
 
 title.style.color = "forestgreen"
 
